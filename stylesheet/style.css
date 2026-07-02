@@ -1,0 +1,51 @@
+/* Import CSS Files */
+
+@import url('navbar.css');
+@import url('hero.css');
+@import url('about.css');
+@import url('menu.css');
+@import url('gallery.css');
+@import url('review.css');
+@import url('contact.css');
+@import url('footer.css');
+@import url('animations.css');
+@import url('responsive.css');/* ==========================
+   Google Font
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================
+   CSS Variables
+========================== */
+
+:root{
+    --primary-color:#6F4E37;
+    --secondary-color:#4B2E20;
+    --accent-color:#D9B08C;
+    --light-color:#F5E6D3;
+    --white:#FFFFFF;
+    --black:#222222;
+    --gray:#666666;
+}
+
+/* ==========================
+   Global Reset
+========================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+}
+

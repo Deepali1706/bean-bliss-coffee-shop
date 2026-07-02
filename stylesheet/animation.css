@@ -1,0 +1,269 @@
+/* ==========================
+   Global Smooth Scroll
+========================== */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ==========================
+   Fade In Animation
+========================== */
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* ==========================
+   Slide Up Animation
+========================== */
+
+@keyframes slideUp{
+    from{
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================
+   Slide Left Animation
+========================== */
+
+@keyframes slideLeft{
+    from{
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ==========================
+   Slide Right Animation
+========================== */
+
+@keyframes slideRight{
+    from{
+        opacity: 0;
+        transform: translateX(80px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ==========================
+   Floating Animation
+========================== */
+
+@keyframes floating{
+
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-15px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+
+}
+
+/* ==========================
+   Button Pulse
+========================== */
+
+@keyframes pulse{
+
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.05);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+/* ==========================
+   Image Zoom
+========================== */
+
+@keyframes imageZoom{
+
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.05);
+    }
+
+}
+
+/* ==========================
+   Hero Animations
+========================== */
+
+.hero-text{
+
+    animation: slideLeft 1s ease;
+}
+
+.hero-image img{
+
+    animation: slideRight 1s ease,
+               floating 4s ease-in-out infinite;
+}
+
+/* ==========================
+   About Section
+========================== */
+
+.about-image{
+
+    animation: slideLeft 1.2s ease;
+}
+
+.about-content{
+
+    animation: slideRight 1.2s ease;
+}
+
+/* ==========================
+   Menu Cards
+========================== */
+
+.menu-card{
+
+    animation: slideUp 1s ease;
+}
+
+.menu-card:hover{
+
+    transform: translateY(-10px) scale(1.03);
+}
+
+/* ==========================
+   Gallery Images
+========================== */
+
+.gallery-grid img{
+
+    animation: fadeIn 1.2s ease;
+}
+
+.gallery-grid img:hover{
+
+    transform: scale(1.08);
+}
+
+/* ==========================
+   Review Cards
+========================== */
+
+.review-card{
+
+    animation: slideUp 1s ease;
+}
+
+.review-card:hover{
+
+    transform: translateY(-10px);
+}
+
+/* ==========================
+   Contact Cards
+========================== */
+
+.contact-info p{
+
+    animation: fadeIn 1.2s ease;
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+.primary-btn:hover,
+.order-btn:hover,
+.about-btn:hover{
+
+    animation: pulse .6s ease;
+}
+
+/* ==========================
+   Navigation Links
+========================== */
+
+.nav-links a{
+
+    position: relative;
+}
+
+.nav-links a::after{
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -5px;
+
+    width: 0;
+    height: 2px;
+
+    background: var(--primary-color);
+
+    transition: .3s;
+}
+
+.nav-links a:hover::after{
+
+    width: 100%;
+}
+
+/* ==========================
+   Logo Animation
+========================== */
+
+.logo h1{
+
+    transition: .3s;
+}
+
+.logo:hover h1{
+
+    transform: rotate(-3deg);
+}
+
+/* ==========================
+   Footer Icons
+========================== */
+
+.social-icons a:hover{
+
+    transform: translateY(-5px) rotate(360deg);
+}

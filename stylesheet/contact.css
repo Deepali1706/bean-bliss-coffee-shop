@@ -1,0 +1,63 @@
+/* ==========================
+   Contact Section
+========================== */
+
+.contact{
+    width: 90%;
+    max-width: 1400px;
+    margin: 120px auto;
+    text-align: center;
+
+    background: var(--light-color);
+    padding: 80px 40px;
+    border-radius: 30px;
+}
+
+/* ==========================
+   Contact Heading
+========================== */
+
+.contact h2{
+    font-size: 2.8rem;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.contact p{
+    color: var(--gray);
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* ==========================
+   Contact Info
+========================== */
+
+.contact-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.contact-info p{
+    background: var(--white);
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-info p:hover{
+    background: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-8px);
+}
